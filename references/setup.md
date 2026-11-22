@@ -49,4 +49,4 @@ Cheap MS2109 USB sticks send MJPEG; Mac recovery/firmware screens carry no HDCP.
 | clicks off by a lot | recalibrate; check the captured screen is the one the mouse lives on |
 | calibration sees few points | someone moved the mouse, very busy screen, or pointer hidden (some apps/games hide it) |
 | BIOS ignores the mouse | use keyboard, or the relative mouse (`{"rel":[dx,dy]}`) |
-| Mac repeatedly resets the Pi during USB enumeration | Check cable/adapter/port and Pi UDC state plus `dmesg`. On 2026-11-08 Windows accepted this gadget and Mac Recovery did not; no USB fix is confirmed yet. |
+| Mac repeatedly resets the Pi during USB enumeration | Check cable/adapter/port and Pi UDC state plus `dmesg`. On 2026-11-08 Windows accepted this gadget and Mac Recovery did not; no USB fix is confirmed yet. For a network alternative, see [mac-recovery-ssh.md](mac-recovery-ssh.md). |

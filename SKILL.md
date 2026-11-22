@@ -20,6 +20,7 @@ All commands: `uv run <skill>/scripts/kvm.py <cmd>` (deps install automatically)
 - `can't reach keypi` → Pi off / not on WiFi; find it (ping sweep, Raspberry Pi MAC `B8-27-EB`), `kvm.py setup --pi <ip>`.
 - `USB not configured` → target off/asleep, or cable in the Pi's PWR port instead of USB.
 - Not set up / new Pi → read [references/setup.md](references/setup.md).
+- Mac Recovery with a failing USB link: when the user requests a network alternative, read [references/mac-recovery-ssh.md](references/mac-recovery-ssh.md) for the tested reverse-SSH route. It needs both an outbound tunnel and a temporary SSH server inside Recovery.
 
 ## 2. Calibrate (first time, and whenever it may be stale)
 

@@ -55,7 +55,7 @@ The Pi sends an absolute mouse, with positions from 0 to 32767 on each axis. Whe
 - Powered from the target alone, a Zero W needs 30 to 40 seconds to boot and misses BIOS keys. Power it separately for boot-time work.
 - Some BIOS screens ignore an absolute mouse; a relative mouse is included as a fallback.
 - Windows maps an absolute mouse to the primary monitor only.
-- Mac Recovery did not accept the gadget over USB in testing (2026-11-08); no fix is confirmed.
+- Mac Recovery did not accept the gadget over USB in testing (2026-11-08); no fix is confirmed. What worked there was SSH out of Recovery: [references/mac-recovery-ssh.md](references/mac-recovery-ssh.md).
 - Not built: OCR, capture on the Pi itself, a test on a truly offline machine.
 
 ## Safety
