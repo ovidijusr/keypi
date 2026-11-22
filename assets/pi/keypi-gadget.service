@@ -1,0 +1,13 @@
+[Unit]
+Description=keypi USB gadget (keyboard + mouse)
+After=sys-kernel-config.mount
+Requires=sys-kernel-config.mount
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/keypi-gadget.sh
+ExecStop=/usr/local/bin/keypi-gadget.sh stop
+
+[Install]
+WantedBy=multi-user.target

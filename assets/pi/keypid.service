@@ -1,0 +1,15 @@
+[Unit]
+Description=keypi HTTP API (keyboard + mouse control for the kvm skill)
+After=keypi-gadget.service network-online.target
+Requires=keypi-gadget.service
+PartOf=keypi-gadget.service
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/keypi serve --port 8765
+Restart=on-failure
+RestartSec=2
+DynamicUser=yes
+SupplementaryGroups=plugdev
+
+[Install]
+WantedBy=multi-user.target

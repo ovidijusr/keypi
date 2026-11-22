@@ -1,0 +1,2 @@
+# keypi: members of plugdev (the default Pi user, and the keypid service) may write HID reports.
+KERNEL=="hidg[0-9]*", GROUP="plugdev", MODE="0660"
